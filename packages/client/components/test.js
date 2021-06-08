@@ -8,6 +8,7 @@ import { useQuery } from "@apollo/react-hooks";
 export default function Test(props) {
   
   const { name, id } = useParams();
+  //const id_string = id;
   const GET_ITEMS = gql `
   query getItem{
     item(id: ${+id}){
