@@ -41,7 +41,18 @@ Describe your solution: <___TODO-FILL_ME_IN___>
 Describe your solution: <
     Try to cache the img before rendering the page at start, I don't have time to finished SSR, but it seems like doable if I had more time to figure out of SSR.
 
-    I noticed that I should do on ApolloClient with set SSR to true, and write a component to render the page as blank html, which make faster, then use React.hydrate to render the pages after.
+    I noticed that I should do on ApolloClient with set SSR to true, and write a component to render the page as blank html(ReactDOM.renderToStaticMarkup), which make faster, then use React.hydrate to render the pages after.
+
+    Step:
+
+    By using Apollo Client, some of the components in the React tree probably execute a GraphQL query with the useQuery hook. 
+    We can let the Apollo Client to execute all of the queries required by the tree's components with the getDataFromTree function.
+
+    And it returns a Promise that resolves when all result data is ready in the Apollo-client-cache.
+
+    Then rehyrating the client-side cache
+
+    
 
 
 >
