@@ -7,7 +7,6 @@ const getItemsByIdHandler = async (request, response) => {
     const listOfItemIds = stringOfItemIds !== '' ? stringOfItemIds.split(',') : [];
 
     const data = await mockDBCalls.getItemsById(listOfItemIds);
-
     // returned data is always stringified for this endpoint
     return response.status(200).send(JSON.stringify(data));
 };

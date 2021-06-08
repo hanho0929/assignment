@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 
 const express = require('express');
 const app = express();
@@ -105,4 +105,3 @@ app.listen({ port }, () => {
         `Graphql endpoint is at http://localhost:${port}${apolloServer.graphqlPath}`
     );
 });
-
