@@ -62,6 +62,7 @@ const resolvers = {
             }
 
             // return the data
+            // console.log(listOfRecommendedItemsToReturn);
             return listOfRecommendedItemsToReturn;
         },
         item: async (parent, args, context, info) => {

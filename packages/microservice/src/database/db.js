@@ -7,8 +7,8 @@ DO NOT MODIFY this file
 
 module.exports = {
     itemsById: {
-        '0001': {
-            id: '0001',
+        '1': {
+            id: '1',
             name: 'Honeycrisp Apple',
             img: 'honeycrisp_apple.jpg',
             department: 'grocery',
@@ -16,8 +16,8 @@ module.exports = {
             weight: '1g',
             price: 1.01,
         },
-        '0002': {
-            id: '0002',
+        '2': {
+            id: '2',
             name: 'Anjou Pear',
             img: 'anjou_pear.jpg',
             department: 'grocery',
@@ -25,8 +25,8 @@ module.exports = {
             weight: '2g',
             price: 2.02,
         },
-        '0003': {
-            id: '0003',
+        '3': {
+            id: '3',
             name: 'Mens Bucket Hat',
             img: 'mens_bucket_hat.jpg',
             department: 'apparel',
@@ -34,8 +34,8 @@ module.exports = {
             weight: '3lbs',
             price: 50.05,
         },
-        '0004': {
-            id: '0004',
+        '4': {
+            id: '4',
             name: 'Samsung TV',
             img: 'samsung_tv.jpg',
             department: 'electronics',
@@ -43,8 +43,8 @@ module.exports = {
             weight: '50lbs',
             price: 100.01,
         },
-        '0005': {
-            id: '0005',
+        '5': {
+            id: '5',
             name: 'Puffy Chair',
             img: 'puffy_chair.jpg',
             department: 'home and furniture',
@@ -53,8 +53,8 @@ module.exports = {
             packagedWeight: '20lbs',
             price: 90.00,
         },
-        '0006': {
-            id: '0006',
+        '6': {
+            id: '6',
             name: 'Sharp TV',
             img: 'sharp_tv.jpg',
             department: 'electronics',
@@ -63,8 +63,8 @@ module.exports = {
             packagedWeight: '100lbs',
             price: 80.00,
         },
-        '0007': {
-            id: '0007',
+        '7': {
+            id: '7',
             name: 'Apple Tv',
             img: 'apple_tv.jpg',
             department: 'electronics',
@@ -74,7 +74,7 @@ module.exports = {
         },
     },
     usersRecommendedItemsByUsername: {
-        james: ['0001', '0002', '0003', '0004', '0005', '0006', '0007'],
-        monica: ['0004', '0002', '0005'],
+        james: ['1', '2', '3', '4', '5', '6', '7'],
+        monica: ['4', '2', '5'],
     }
 };
